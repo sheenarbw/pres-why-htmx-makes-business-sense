@@ -20,29 +20,67 @@
 		style="position: absolute; bottom:0.5em; font-size:2em ; text-align: left; width: 100%; color: lightgray; padding-left: 0.5em;">
 
 
-		@sheena@fosstodon.org | https://sheenaoc.com | x: @sheena_oconnell
+		https://prelude.tech | @sheena@fosstodon.org | https://sheenaoc.com | x: @sheena_oconnell
 		<!-- <img src="images/qr2.png" height="500em"/> -->
 	</div>
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h2>Links</h2>
-				<ul>
-					<li><a href="https://sheenaoc.com">Sheena's blog</a></li>
-					<li><a href="https://fosstodon.org/@sheena">Mastodon: @sheena@fosstodon.org</a></li>
-					<li><a href="https://twitter.com/sheena_oconnell">X/Twitter: @sheena_oconnell</a></li>
-					<li><a href="https://www.linkedin.com/in/sheena-o-connell-0bb72527/">LinkedIn</a></li>
-				</ul>
-				<br />
-				To navigate this slide deck:
-				Use cursor keys or click on arrows on bottom right.
-				Use Esc key to toggle overview
+				<section>
 
+					<h2>Links [1/2]</h2>
+					<ul>
+
+
+						<li><a src="https://prelude.tech/upcoming_workshops">Upcoming training @ Prelude</a></li>
+						<li><a
+								src="https://www.quicket.co.za/events/291690-upcoming-workshop-djangohtmx-etc-qa-session/">Online
+								Q&A about how my workshops work. Tuesday 19 Nov</a></li>
+						<li><a src="https://cal.com/sheena-oconnell/explore">Schedule exploratory call with me</a></li>
+
+						<li><a href="https://sheenaoc.com">Sheena's blog</a></li>
+
+					</ul>
+					<br />
+					To navigate this slide deck:
+					Use cursor keys or click on arrows on bottom right.
+					Use Esc key to toggle overview
+
+				</section>
+
+				<section>
+
+					<h2>Links [2/2]</h2>
+					<ul>
+
+
+
+						<li><a href="https://fosstodon.org/@sheena">Mastodon: @sheena@fosstodon.org</a>
+						</li>
+						<li><a href="https://twitter.com/sheena_oconnell">X/Twitter: @sheena_oconnell</a>
+						</li>
+						<li><a href="https://www.linkedin.com/in/sheena-o-connell-0bb72527/">LinkedIn</a>
+						</li>
+					</ul>
+
+
+				</section>
 
 			</section>
 
 			<section>
-				<h1>TITLE SLIDE</h1>
+				<section>
+
+					<h1>Why HTMX makes good business sense</h1>
+				</section>
+				<section>
+					<h2>What's this all about?</h2>
+					<ul>
+						<li class="fragment">Fairly new on the scene</li>
+						<li class="fragment">Simplifies web dev</li>
+						<li class="fragment">Not a silver bullet</li>
+					</ul>
+				</section>
 			</section>
 
 			<section>
@@ -66,14 +104,10 @@
 									<li class="fragment">Coding since young teen</li>
 									<li class="fragment">Worked in a lot of startups</li>
 									<li class="fragment">
-										Most recently: 5 years as CTO of Umuzi
-										<ul>
-											<li class="fragment">Science of learning => Engineering of learning</li>
-											<li class="fragment">Building the stuff</li>
-											<li class="fragment">Human processes
-											</li>
-										</ul>
+										Last 5 years in tech education
 									</li>
+									<li class="fragment">Figure out: what are the minimal skills a dev needs to be
+										productive</li>
 								</ul>
 
 
@@ -85,23 +119,290 @@
 						</tr>
 					</table>
 				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Modern web dev</h2>
+					<ul>
+						<li class="fragment">Dynamic, interactive user experiences</li>
+						<li class="fragment">Heavy frontend tooling (eg: React, Vue, etc)</li>
+						<li class="fragment">Backend often built in a different way</li>
+
+
+					</ul>
+				</section>
+
+				<section>
+					<h2>Architectural components</h2>
+					Aggressively over simplified<br />
+					<img src="images/fullstack.drawio.svg" />
+				</section>
+				<section>
+					<h2>Architectural options</h2>
+
+					<ul>
+						<li class="fragment">Only a frontend</li>
+						<li class="fragment">Frontend JS, Backend JS</li>
+						<li class="fragment">Fullstack JS (Eg: NextJs)</li>
+						<li class="fragment">Frontend JS, Backend whatever you need</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>Realistic example</h2>
+					<img src="images/fullstack_real.drawio.svg" />
+				</section>
+
+
+				<section>
+					<h2>Challenging...</h2>
+
+					<ul>
+						<li class="fragment">Code complexity, many very different moving parts</li>
+
+						<li class="fragment">Deployment and testing becomes difficult</li>
+						<li class="fragment">Different skills and specialisations needed</li>
+						<!-- <li class="fragment">Interfaces between teams</li>
+						<li class="fragment">Pr</li> -->
+
+					</ul>
+				</section>
+
+			</section>
+
+			<section>
+
+
+				<section>
+					<h2>Organisations that do web dev</h2>
+					<ul>
+						<li class="fragment">Backend team / Frontend team</li>
+						<li class="fragment">Teamwork complexities + friction (add more tools? GraphQL?)</li>
+						<li class="fragment">Project management load</li>
+						<li class="fragment">Extra handoffs</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>General process for solving problems</h2>
+
+					<h1 class="fragment">Add more stuff!</h1>
+				</section>
+
+				<section>
+					<h2>Think different</h2>
+					<span class="fragment">
+						What would we need to do to HTML to make it good enough to support the modern web?
+					</span>
+				</section>
+			</section>
+
+			<section>
+
+
+				<section>
+					<h1>Introducing HTMX</h1>
+				</section>
+
+				<section>
+					<h2>Javascript fatigue</h2>
+					Just another one of those...
+				</section>
+
+				<section>
+					<h1>What is it?</h1>
+					<ul>
+						<li class="fragment">Tiny, simple JS library</li>
+						<li class="fragment">Allows you to create rich frontend experiences</li>
+						<li class="fragment">By adding a few simple attributes to HTML</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>But seriously, what is it?</h2>
+
+					<pre><code class="hljs html" data-trim data-line-numbers>
+
+					<button 
+					    hx-trigger="click" 
+						hx-post="/clicked" 
+						hx-target="#parent-div" 
+						hx-swap="outerHTML">
+						Click Me!
+					</button>
+
+				</code>
+			</pre>
+				</section>
+
+				<section>
+					<h2>What did it do there?</h2>
+
+					<ul>
+						<li class="fragment">User clicks a button (any event will do)</li>
+						<li class="fragment">Browser sends request to server</li>
+						<li class="fragment">Server responds with normal HTML</li>
+						<li class="fragment">Browser puts the HTML on the page</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Versus React</h2>
+					<a href="https://chatgpt.com/share/672dc3e5-a260-8002-a7d6-51302bc03b19">see chat</a>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+
+					<h2>But does it scale?</h2>
+
+					<ul>
+						<li class="fragment">How much compute does it need?</li>
+						<li class="fragment">Can it handle complexity</li>
+					</ul>
+				</section>
 
 				<section>
 
-					<h2>
-						And now?
-					</h2>
+					<iframe width="560" height="315"
+						src="https://www.youtube.com/embed/3GObi93tjZI?si=gCTB56WX60_4hVTF&amp;start=331"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</section>
 
-					<!-- <span class="fragment">Still in tech-ed + ed-tech ;)</span><br /> -->
+				<section>
+					<h2>What if I told you</h2>
 
-					<span class="fragment">Building tools/systems to help tech educators with their trickiest
-						problems</span>
+					You don't need to write complicated code to build modern web experiences
+				</section>
 
+			</section>
 
+			<section>
+				<h2>What is simplicity worth?</h2>
+			</section>
+
+			<section>
+				<h2>My project</h2>
+
+				<ul>
+					<li class="fragment">Frontend<ul>
+							<li class="fragment">React</li>
+							<li class="fragment">Material UI</li>
+							<li class="fragment">Redux</li>
+							<li class="fragment">Redux saga</li>
+						</ul>
+					</li>
+					<li class="fragment">Backend<ul>
+							<li class="fragment">Django</li>
+							<li class="fragment">Django Rest Framework</li>
+							<li class="fragment">Guardian</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Introduced HTMX</h2>
+
+				<ul>
+					<li class="fragment">Everyone was productive</li>
+					<li class="fragment">I was more productive too</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>This is what winning feels like</h2>
+				<ul>
+					<li class="fragment">Same team members => more value</li>
+					<li class="fragment">Code base smaller + simpler</li>
+					<li class="fragment">Fewer weird bugs => less rework and troubleshooting</li>
+					<li class="fragment">Everyone == Full stack</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Remember: Organisations that do web dev</h2>
+				<ul>
+					<li class="fragment">Backend team / Frontend team</li>
+					<li class="fragment">Teamwork complexities + friction (add more tools? GraphQL?)</li>
+					<li class="fragment">Project management load</li>
+					<li class="fragment">Extra handoffs</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>But wait, there's more</h2>
+				<ul>
+					<li class="fragment">Lowers barrier to entry to web dev</li>
+					<li class="fragment">Larger, cheaper talent pool!</li>
+					<li class="fragment">Less risk in taking on junior staff and trying new things</li>
+					<li class="fragment">Juniors get an opportunity to grow</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Good for...</h2>
+
+				<ul>
+					<li class="fragment">Devs and teams: Build stuff fast with good DX</li>
+					<li class="fragment">Organisations: Simplify processes, add leverage to ICs</li>
+					<li class="fragment">Ecosystem: Lowering barriers to entry</li>
+				</ul>
+			</section>
+
+			<section>
+				<h1>I ❤️ HTMX</h1>
+			</section>
+
+			<section>
+
+				<section>
+					<h1>I teach this stuff</h1>
+				</section>
+
+				<section>
+					<h2>What it looks like</h2>
+					<ul>
+						<li class="fragment">Small group => high support</li>
+						<li class="fragment">Expert support</li>
+						<li class="fragment">Highly practical w/ personal projects</li>
+						<li class="fragment">Lovingly crafted</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Next workshop 23/24 Nov </h2>
+					<ul>
+						<li class="fragment">HTMX</li>
+						<li class="fragment">Django</li>
+						<li class="fragment">TailwindCSS</li>
+						<li class="fragment">Playwright</li>
+						<li class="fragment">Alpine.JS</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Custom training for orgs and teams</h2>
+
+					<ul>
+						<li class="fragment">Ramp up on these tools quickly</li>
+						<li class="fragment">Training crafted for your use-case</li>
+					</ul>
 				</section>
 
 
 			</section>
+
+
+			<!-- <section>
+				
+			</section> -->
 
 			<section>
 				<h2>The end</h2>
