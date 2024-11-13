@@ -1,5 +1,5 @@
 To make QR code:
 
 ```
-npx qrcode foo.com -o qr.png
+npx qrcode https://sheenarbw.github.io/pres-why-htmx-makes-business-sense/ -o qr.png
 ```
